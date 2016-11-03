@@ -15,6 +15,9 @@
 		A9750C871D9A3FCB001CF9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9750C851D9A3FCB001CF9A4 /* LaunchScreen.storyboard */; };
 		A9750C921D9A3FCB001CF9A4 /* scrollviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9750C911D9A3FCB001CF9A4 /* scrollviewTests.m */; };
 		A9750C9D1D9A3FCB001CF9A4 /* scrollviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9750C9C1D9A3FCB001CF9A4 /* scrollviewUITests.m */; };
+		A9750CAC1D9A3FF3001CF9A4 /* ZSScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = A9750CAB1D9A3FF3001CF9A4 /* ZSScrollview.m */; };
+		A9750CAF1D9A6304001CF9A4 /* DarwCircleProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A9750CAE1D9A6304001CF9A4 /* DarwCircleProgressButton.m */; };
+		A9750CB21D9A68AD001CF9A4 /* DrawCircleProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A9750CB11D9A68AD001CF9A4 /* DrawCircleProgressButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		A9750C981D9A3FCB001CF9A4 /* scrollviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrollviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9750C9C1D9A3FCB001CF9A4 /* scrollviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scrollviewUITests.m; sourceTree = "<group>"; };
 		A9750C9E1D9A3FCB001CF9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9750CAA1D9A3FF3001CF9A4 /* ZSScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSScrollview.h; sourceTree = "<group>"; };
+		A9750CAB1D9A3FF3001CF9A4 /* ZSScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSScrollview.m; sourceTree = "<group>"; };
+		A9750CAD1D9A6304001CF9A4 /* DarwCircleProgressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarwCircleProgressButton.h; sourceTree = "<group>"; };
+		A9750CAE1D9A6304001CF9A4 /* DarwCircleProgressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarwCircleProgressButton.m; sourceTree = "<group>"; };
+		A9750CB01D9A68AD001CF9A4 /* DrawCircleProgressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawCircleProgressButton.h; sourceTree = "<group>"; };
+		A9750CB11D9A68AD001CF9A4 /* DrawCircleProgressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawCircleProgressButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				A9750C7B1D9A3FCB001CF9A4 /* AppDelegate.m */,
 				A9750C7D1D9A3FCB001CF9A4 /* ViewController.h */,
 				A9750C7E1D9A3FCB001CF9A4 /* ViewController.m */,
+				A9750CAA1D9A3FF3001CF9A4 /* ZSScrollview.h */,
+				A9750CAB1D9A3FF3001CF9A4 /* ZSScrollview.m */,
+				A9750CB01D9A68AD001CF9A4 /* DrawCircleProgressButton.h */,
+				A9750CB11D9A68AD001CF9A4 /* DrawCircleProgressButton.m */,
+				A9750CAD1D9A6304001CF9A4 /* DarwCircleProgressButton.h */,
+				A9750CAE1D9A6304001CF9A4 /* DarwCircleProgressButton.m */,
 				A9750C801D9A3FCB001CF9A4 /* Main.storyboard */,
 				A9750C831D9A3FCB001CF9A4 /* Assets.xcassets */,
 				A9750C851D9A3FCB001CF9A4 /* LaunchScreen.storyboard */,
@@ -270,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9750CAC1D9A3FF3001CF9A4 /* ZSScrollview.m in Sources */,
 				A9750C7F1D9A3FCB001CF9A4 /* ViewController.m in Sources */,
 				A9750C7C1D9A3FCB001CF9A4 /* AppDelegate.m in Sources */,
 				A9750C791D9A3FCB001CF9A4 /* main.m in Sources */,
+				A9750CB21D9A68AD001CF9A4 /* DrawCircleProgressButton.m in Sources */,
+				A9750CAF1D9A6304001CF9A4 /* DarwCircleProgressButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = scrollview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZSCreate.scrollview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = scrollview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZSCreate.scrollview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +518,7 @@
 				A9750CA31D9A3FCB001CF9A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9750CA41D9A3FCB001CF9A4 /* Build configuration list for PBXNativeTarget "scrollviewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +527,7 @@
 				A9750CA61D9A3FCB001CF9A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9750CA71D9A3FCB001CF9A4 /* Build configuration list for PBXNativeTarget "scrollviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +536,7 @@
 				A9750CA91D9A3FCB001CF9A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
